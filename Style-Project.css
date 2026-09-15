@@ -1,0 +1,296 @@
+/* Paleta de Cores */
+:root {
+  --azul-principal: #5d7b9d;
+  --azul-escuro: #445b76;
+  --creme: #f6f2e9;
+  --bege: #e3d7c3;
+  --verde-suave: #7b9b7a;
+  --laranja-suave: #d98b4d;
+  --cinza-claro: #e5e7eb;
+  --cinza-escuro: #3a3a3a;
+}
+/* Fim Paleta de Cores */
+
+/* Espaçamento */
+:root {
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 32px;
+
+  --esp-neg-1: -8px;
+  --esp-neg-2: -16px;
+  --esp-neg-3: -32px;
+}
+/* Fim Espaçamento */
+
+/* Tipográfia */
+h1 {
+  margin-top: var(--esp-1);
+}
+h2 {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: var(--esp-neg-2);
+}
+h3 {
+  margin-top: var(--esp-3);
+  text-align: center;
+}
+h4 {
+  margin-top: var(--esp-3);
+  font-style: oblique;
+}
+p {
+  color: var(--cinza-escuro);
+}
+/* Fim Tipográfia */
+
+/* Body */
+body {
+  background-color: var(--creme);
+  font-family: Arial, sans-serif;
+}
+/* Fim Body */
+
+/* Header */
+header {
+  text-align: center;
+  background-color: var(--azul-principal);
+  height: auto;
+  border-radius: 8px;
+  padding-block-end: 4px;
+}
+.logo {
+  width: 120px;
+  margin-top: var(--esp-1);
+}
+
+/* Fim Header */
+
+/* Nav */
+nav a:hover {
+  color: var(--laranja-suave);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+nav a {
+  margin-left: var(--esp-2);
+  color: var(--cinza-claro);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+nav {
+  background-color: var(--azul-escuro);
+  text-align: center;
+  border-radius: 8px;
+  height: 32px;
+  padding-top: var(--esp-2);
+}
+/* Fim Nav */
+
+/* Projetos */
+.meus-projetos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.projetos:hover {
+  transition: 0.4s ease;
+  transform: scale(1.05);
+}
+.projetos {
+  background-color: var(--verde-suave);
+  text-align: center;
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+  margin: 16px;
+  grid-column: span 4;
+}
+
+.img-projetos {
+  border: 2px solid var(--cinza-escuro);
+  border-radius: 18px;
+}
+/* Projetos */
+
+/* Footer */
+footer {
+  background-color: var(--azul-principal);
+  border-radius: 5px;
+}
+address {
+  font-weight: bold;
+}
+.contato {
+  color: var(--laranja-suave);
+}
+/* Fim Footer */
+
+/* @media NoteBook */
+@media (min-width: 1051px) and (max-width: 1450px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 100px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .projetos {
+    grid-column: span 4;
+  }
+}
+/* Fim @media NoteBook */
+
+/* @media Tablet Paisagem */
+@media (min-width: 881px) and (max-width: 1050px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 90px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .projetos {
+    grid-column: span 6;
+  }
+  .projetos:nth-child(3) {
+    grid-column: 4/10;
+  }
+}
+/* Fim @media Tablet Paisagem */
+
+/* @media Tablet Médio/Pequeno */
+@media (min-width: 601px) and (max-width: 880px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 90px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .projetos {
+    grid-column: span 6;
+  }
+  .projetos:nth-child(3) {
+    grid-column: span 12;
+  }
+}
+/* Fim @media Tablet Médio/Pequeno */
+
+/* @media Celular Paisagem */
+@media (min-width: 481px) and (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 90px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+
+  .projetos {
+    grid-column: span 12;
+  }
+}
+/* Fim @media Celular Paisagem */
+
+/* @media Celular */
+@media (min-width: 266px) and (max-width: 480px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 80px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    font-size: small;
+    margin-left: var(--esp-1);
+  }
+  .projetos {
+    grid-column: span 12;
+  }
+}
+/* Fim @media Celular */
