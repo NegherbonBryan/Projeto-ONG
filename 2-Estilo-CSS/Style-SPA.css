@@ -1,0 +1,437 @@
+/* Paleta de Cores */
+:root {
+  --azul-principal: #5d7b9d;
+  --azul-escuro: #445b76;
+  --creme: #f6f2e9;
+  --bege: #e3d7c3;
+  --verde-suave: #7b9b7a;
+  --laranja-suave: #d98b4d;
+  --cinza-claro: #e5e7eb;
+  --cinza-escuro: #3a3a3a;
+}
+/* Fim Paleta de Cores */
+
+/* Espaçamento */
+:root {
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 32px;
+
+  --esp-neg-1: -8px;
+  --esp-neg-2: -16px;
+  --esp-neg-3: -32px;
+}
+/* Fim Espaçamento */
+
+/* Tipográfia */
+h1 {
+  margin-top: var(--esp-1);
+}
+h2 {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: var(--esp-neg-2);
+}
+h3 {
+  font-size: 25px;
+  margin-top: var(--esp-3);
+  text-align: center;
+}
+h4 {
+  margin-top: var(--esp-3);
+  font-style: oblique;
+}
+p {
+  color: var(--cinza-escuro);
+}
+.Fundador {
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  margin-top: var(--esp-neg-2);
+}
+
+/* Fim Tipográfia */
+
+/* Body */
+body {
+  background-color: var(--creme);
+  font-family: Arial, sans-serif;
+}
+/* Fim Body */
+
+/* Header */
+header {
+  background-color: var(--azul-principal);
+  height: auto;
+  border-radius: 8px;
+  padding-block-end: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 120px;
+  margin: 0;
+}
+.titulo {
+  flex: 1;
+  text-align: center;
+  margin-left: -120px;
+}
+/* Fim Header */
+
+/* Nav */
+nav a:hover {
+  color: var(--laranja-suave);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+nav a {
+  margin-left: var(--esp-2);
+  color: var(--cinza-claro);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#menu,
+label[for="menu"] {
+  display: none;
+}
+
+nav {
+  background-color: var(--azul-escuro);
+  margin-top: var(--esp-1);
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  top: 100%;
+  left: 0;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--azul-escuro);
+  border-radius: 10px;
+  list-style: none;
+  top: calc(100% + 15px);
+  padding: 8px;
+  margin: 0;
+  max-width: auto;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 10s;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+/* Fim Nav */
+
+/* Projetos */
+
+.meus-projetos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.projetos {
+  background-color: var(--verde-suave);
+  text-align: center;
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+  margin: 16px;
+  grid-column: span 4;
+  transition: transform 0.3s ease;
+}
+
+.projetos:hover {
+  transform: scale(1.05);
+}
+.destaque {
+  transform: scale(1.05);
+}
+
+.img-projetos {
+  border: 2px solid var(--cinza-escuro);
+  border-radius: 18px;
+}
+
+/* Projetos */
+
+/* Form */
+fieldset {
+  border-color: #3a3a3a;
+  border-radius: 10px;
+  display: grid;
+  margin-top: var(--esp-1);
+}
+label {
+  margin-top: var(--esp-2);
+}
+.botoes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+button {
+  border: 1px solid grey;
+  margin-top: var(--esp-1);
+  padding: 16px 64px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px;
+  transition: 0.4s;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+.continuar:hover {
+  background-color: #3d7fe2;
+}
+.continuar {
+  background-color: #4991fc;
+}
+input:user-invalid {
+  border: 2px solid red;
+}
+input:user-valid {
+  border: 2px solid green;
+}
+
+/* Fim Form */
+
+/* Footer */
+footer {
+  background-color: var(--azul-principal);
+  border-radius: 5px;
+}
+address {
+  font-weight: bold;
+}
+.contato {
+  color: var(--laranja-suave);
+}
+/* Fim Footer */
+
+/* Aba Do Doador */
+.Doador {
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  margin-top: var(--esp-neg-2);
+}
+select {
+  padding: 5px;
+  margin-top: var(--esp-1);
+}
+.Valor {
+  margin-top: var(--esp-1);
+}
+/* Fim Aba Do Doador */
+
+/* @media NoteBook */
+@media (min-width: 1051px) and (max-width: 1450px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 100px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .projetos {
+    grid-column: span 4;
+  }
+}
+/* Fim @media NoteBook */
+
+/* @media Tablet Paisagem */
+@media (min-width: 881px) and (max-width: 1050px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 90px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .projetos {
+    grid-column: span 6;
+  }
+  .projetos:nth-child(3) {
+    grid-column: 4/10;
+  }
+}
+/* Fim @media Tablet Paisagem */
+
+/* @media Tablet Médio/Pequeno */
+@media (min-width: 601px) and (max-width: 880px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 90px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .projetos {
+    grid-column: span 6;
+  }
+  .projetos:nth-child(3) {
+    grid-column: span 12;
+  }
+}
+/* Fim @media Tablet Médio/Pequeno */
+
+/* @media Celular Paisagem */
+@media (min-width: 481px) and (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 90px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    margin-left: var(--esp-1);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+
+  .projetos {
+    grid-column: span 12;
+  }
+}
+/* Fim @media Celular Paisagem */
+
+/* @media Celular */
+@media (min-width: 266px) and (max-width: 480px) {
+  nav {
+    display: none;
+    margin-top: -38px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    padding-block-end: var(--esp-1);
+    align-items: center;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .logo {
+    grid-column: span 2;
+    width: 80px;
+    margin-left: var(--esp-1);
+  }
+  .titulo {
+    grid-column: span 10;
+    font-size: small;
+    margin-left: var(--esp-1);
+  }
+  .projetos {
+    grid-column: span 12;
+  }
+  #menu {
+    display: none;
+  }
+  label[for="menu"] {
+    display: block;
+    border-radius: 8px;
+  }
+  label {
+    background-color: var(--azul-escuro);
+    color: var(--cinza-claro);
+    border: 1px var(--cinza-escuro);
+    border-radius: 2px;
+    font-size: 30px;
+    padding-left: 5px;
+    margin-top: 5px;
+  }
+  #menu:checked ~ nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* Fim @media Celular */
