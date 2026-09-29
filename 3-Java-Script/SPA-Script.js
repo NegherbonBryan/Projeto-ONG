@@ -167,7 +167,7 @@ window.addEventListener("hashchange", function () {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  /* Area do Doador */
+  /* Área do Doador - formulário e funcionalidades de doação */
   else if (rota === "#AreaDoDoador") {
     let UsuarioObjeto = BuscarUsuario();
     let HTMLAreaDoador = `<h3>Área Do Doador</h3>
