@@ -81,6 +81,15 @@ header {
 }
 /* Fim Header */
 
+/* Navegação Teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--laranja-suave);
+  outline-offset: 3px;
+}
+/* Fim Navegação Teclado */
+
 /* Nav */
 nav a:hover {
   color: var(--laranja-suave);
@@ -138,7 +147,8 @@ nav {
   transition: 10s;
 }
 
-.dropdown:hover .submenu {
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
   display: block;
 }
 /* Fim Nav */
