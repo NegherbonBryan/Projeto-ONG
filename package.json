@@ -1,0 +1,24 @@
+{
+  "name": "ong-web-spa",
+  "version": "1.0.0",
+  "description": "Este é um projeto fictício inspirado em um site de ONG, onde o intuito principal é testar minhas habilidades de desenvolvimento Front-End para Web.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NegherbonBryan/Projeto-ONG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NegherbonBryan/Projeto-ONG/issues"
+  },
+  "homepage": "https://github.com/NegherbonBryan/Projeto-ONG#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "sharp": "^0.35.5"
+  }
+}
