@@ -53,6 +53,55 @@ p {
 
 /* Fim Tipográfia */
 
+/* @media Tema Escuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --creme: #121820;
+    --cinza-escuro: #e5e7eb;
+    --verde-suave: #344e41;
+    --azul-principal: #263b53;
+    --laranja-suave: #f18227;
+  }
+  main h3,
+  main h4,
+  label,
+  legend {
+    color: var(--cinza-escuro);
+  }
+  header h1,
+  header h2 {
+    color: var(--cinza-escuro);
+  }
+  input {
+    background-color: #1e2936;
+    color: #e5e7eb;
+    border: 1px solid #52677f;
+  }
+  select {
+    background-color: #1e2936;
+    color: #e5e7eb;
+    border: 1px solid #52677f;
+  }
+  button {
+    background-color: #263b53;
+    color: #e5e7eb;
+    border: 1px solid #52677f;
+  }
+  button:focus-visible {
+    outline: 2px solid #f4a261;
+    outline-offset: 2px;
+  }
+  .continuar:hover {
+    background-color: #344e61;
+  }
+
+  .continuar:focus-visible {
+    outline: 2px solid #f4a261;
+    outline-offset: 2px;
+  }
+}
+/* Fim @media Tema Escuro */
+
 /* Body */
 body {
   background-color: var(--creme);
@@ -206,18 +255,10 @@ button {
   margin-top: var(--esp-1);
   padding: 16px 64px;
   border-radius: 4px;
-  box-shadow: 3px 3px 5px;
   transition: 0.4s;
 }
 button:hover {
   transform: scale(1.05);
-}
-
-.continuar:hover {
-  background-color: #3d7fe2;
-}
-.continuar {
-  background-color: #4991fc;
 }
 input:user-invalid {
   border: 2px solid red;

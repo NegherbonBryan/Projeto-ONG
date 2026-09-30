@@ -133,7 +133,7 @@ window.addEventListener("hashchange", function () {
     HTMLCadastro += `</Fieldset>
     <div class="botoes">
       <button type="reset">Cancelar</button>
-      <button type="submit" class="continuar">Continuar</button>
+      <button type="submit">Continuar</button>
     </div>
     </form>`;
 
@@ -190,7 +190,7 @@ window.addEventListener("hashchange", function () {
      <input id="$Valor$" type="number" />
     </fieldset>
     <div class="botoes">
-      <button type="submit" class="continuar">Doar</button>
+      <button type="submit" class="Doar">Doar</button>
     </div>
     `;
 
